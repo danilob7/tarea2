@@ -1,0 +1,95 @@
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #3498db;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Animación para títulos */
+.titulo-animado {
+    font-size: 2.5em;
+    font-weight: bold;
+    animation: animarTitulo 3s ease-out infinite; /* Animación de los títulos */
+}
+
+/* Animación de los títulos */
+@keyframes animarTitulo {
+    0% {
+        transform: translateY(-20px);
+        color: #3498db;
+    }
+    50% {
+        transform: translateY(0);
+        color: #e74c3c;
+    }
+    100% {
+        transform: translateY(-20px);
+        color: #3498db;
+    }
+}
+
+/* Estilo para la descripción */
+.descripcion {
+    margin: 40px;
+    font-size: 1.2em;
+}
+
+/* Estilo para los botones de enlaces */
+.boton-enlace {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 15px;
+    background-color: #2ecc71;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.boton-enlace:hover {
+    background-color: #27ae60;
+    transform: scale(1.1);
+}
+
+/* Estilo para los enlaces de los botones */
+.boton-enlace:active {
+    transform: scale(1);
+}
+
+/* Diseño para la sección de enlaces */
+.enlaces {
+    margin-top: 50px;
+}
+
+/* Diseño para el pie de página */
+footer p {
+    font-size: 1em;
+}
+
+/* Estilo para los enlaces de navegación */
+.boton-enlace:visited {
+    color: white;
+}

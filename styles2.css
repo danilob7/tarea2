@@ -1,0 +1,120 @@
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #3498db;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Animación para títulos */
+.titulo-animado {
+    font-size: 2.5em;
+    font-weight: bold;
+    animation: animarTitulo 3s ease-out infinite; /* Animación de los títulos */
+}
+
+/* Animación de los títulos */
+@keyframes animarTitulo {
+    0% {
+        transform: translateY(-20px);
+        color: #3498db;
+    }
+    50% {
+        transform: translateY(0);
+        color: #e74c3c;
+    }
+    100% {
+        transform: translateY(-20px);
+        color: #3498db;
+    }
+}
+
+/* Estilos para la sección de empleados */
+.empleados {
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.empleado {
+    display: inline-block;
+    width: 30px;
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagen-empleado {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid #409ddb;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.imagen-empleado:hover {
+    transform: scale(1.1);
+}
+
+.empleado:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Estilo para los botones de enlace */
+.boton-enlace {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 15px;
+    background-color: #24b394;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.boton-enlace:hover {
+    background-color: #27ae60;
+    transform: scale(1.1);
+}
+
+.boton-enlace:active {
+    transform: scale(1);
+}
+
+/* Estilo para los enlaces de los botones */
+.boton-enlace:visited {
+    color: white;
+}

@@ -1,0 +1,120 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Actividad 1: Botón con cambio de color y tamaño al hacer clic */
+.btn-actividad1 {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transición para el cambio de tamaño y color */
+}
+
+.btn-actividad1:active {
+    background-color: #45a049; /* Cambio de color al presionar */
+    transform: scale(0.9); /* Reducir tamaño cuando el botón está presionado */
+}
+
+/* Actividad 2: Cuadro con animación de cambio de color */
+.cuadro {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    margin: 20px auto;
+    animation: moverDerecha 4s infinite; /* Animación continua */
+}
+
+@keyframes moverDerecha {
+    0% {
+        background-color: #3498db;
+        transform: translateX(0);
+    }
+    25% {
+        background-color: #e74c3c;
+        transform: translateX(100px);
+    }
+    50% {
+        background-color: #f39c12;
+        transform: translateX(200px);
+    }
+    75% {
+        background-color: #2ecc71;
+        transform: translateX(100px);
+    }
+    100% {
+        background-color: #3498db;
+        transform: translateX(0);
+    }
+}
+
+/* Actividad 3: Texto con animación de giro */
+.texto-animado {
+    font-size: 24px;
+    font-weight: bold;
+    animation: girarYSubir 5s infinite; /* Animación infinita */
+}
+
+@keyframes girarYSubir {
+    0% {
+        transform: rotate(0deg) translateY(0);
+    }
+    50% {
+        transform: rotate(180deg) translateY(-20px);
+    }
+    100% {
+        transform: rotate(360deg) translateY(0);
+    }
+}
+
+/* Actividad 4: Cuadro con efecto de aumento de tamaño al hacer hover */
+.cuadro-hover {
+    width: 100px;
+    height: 100px;
+    background-color: #9b59b6;
+    margin: 20px auto;
+    transition: transform 0.3s ease; /* Transición suave al hacer hover */
+}
+
+.cuadro-hover:hover {
+    transform: scale(1.2); /* Aumentar tamaño cuando se pasa el cursor */
+}
+
+/* Actividad 5: Texto con velocidad ajustable en la animación */
+.texto-velocidad {
+    font-size: 20px;
+    font-weight: bold;
+    animation: moverTexto 6s infinite linear;
+}
+
+@keyframes moverTexto {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
